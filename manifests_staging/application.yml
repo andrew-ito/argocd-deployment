@@ -11,7 +11,7 @@ spec:
     targetRevision: HEAD
     path: manifests_staging
   destination:
-    server: ttps://kubernetes.default.svc
+    server: https://kubernetes.default.svc
     namespace: app-staging
 
   syncPolicy:
