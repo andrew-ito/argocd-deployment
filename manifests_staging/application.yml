@@ -7,7 +7,7 @@ spec:
   project: default
 
   source: 
-    repoURL: https://github.com/andrew-ito/argocd-deployment.git
+    repoURL: https://github.com/andrew-ito/argocd-deployment
     targetRevision: HEAD
     path: manifests_staging
   destination:
