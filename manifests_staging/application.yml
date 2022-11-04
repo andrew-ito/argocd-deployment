@@ -18,3 +18,7 @@ spec:
     automated:
       selfHeal: true
       prune: true
+
+
+# time="2022-11-04T12:00:29Z" level=info msg="Applying resource Ingress/nginx-ingress in cluster: https://10.96.0.1:443, namespace: app"
+# time="2022-11-04T12:00:29Z" level=info msg="Apply failed" application=argocd/argo-prod dryRun=false message="admission webhook \"validate.nginx.ingress.kubernetes.io\" denied the request: host \"a.int.itoutposts.com\" and path \"/\" is already defined in ingress app/k8s-deployment-ingress" syncId=00007-wVKRo task="Sync/0 resource networking.k8s.io/Ingress:app/nginx-ingress nil->obj (,,)"
