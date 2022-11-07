@@ -3,7 +3,7 @@ kind: Kustomization
 resources:
 - ./manifests_prod/deployment.yml
 - ./manifests_prod/service.yml
-- ./manifests_prod/ingress.yml
+# - ./manifests_prod/ingress.yml
 - ./manifests_prod/kustomization.yml
 
 images:
