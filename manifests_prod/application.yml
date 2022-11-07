@@ -8,7 +8,7 @@ metadata:
   annotations:
     argocd-image-updater.argoproj.io/image-list: go_app=abereziuk/task-01
     argocd-image-updater.argoproj.io/go_app.update-strategy: latest
-    argocd-image-updater.argoproj.io/write-back-method: "git:secret:argocd/git-creds"
+    argocd-image-updater.argoproj.io/write-back-method: "git:git-creds"
     argocd-image-updater.argoproj.io/go_app.allow-tags: regexp:^\d{1,2}\.\d{1,2}\.\d{1,2}$
     argocd-image-updater.argoproj.io/git-branch: main
     argocd-image-updater.argoproj.io/write-back-target: kustomization
@@ -18,7 +18,7 @@ spec:
   source: 
     repoURL: https://github.com/andrew-ito/argocd-deployment
     targetRevision: HEAD
-    path: ./manifests_prod/application.yml
+    path: ./manifests_prod/
   destination:
     server: https://kubernetes.default.svc
     namespace: app
