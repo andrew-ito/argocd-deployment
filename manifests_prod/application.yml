@@ -18,7 +18,7 @@ spec:
   source: 
     repoURL: https://github.com/andrew-ito/argocd-deployment
     targetRevision: HEAD
-    path: ./manifests_prod/
+    path: manifests_prod
   destination:
     server: https://kubernetes.default.svc
     namespace: app
