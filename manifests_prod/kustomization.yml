@@ -1,17 +1,11 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-- deployment.yml
-- service.yml
-- ingress.yml
-- kustomization.yml
+- ./manifests_prod/deployment.yml
+- ./manifests_prod/service.yml
+- ./manifests_prod/ingress.yml
+- ./manifests_prod/kustomization.yml
 
 images:
-- name: eu.gcr.io/mymycars-266410/php
-  newTag: v0.2.94
-- name: eu.gcr.io/mymycars-266410/media-manager
-  newTag: v0.0.30
-- name: eu.gcr.io/mymycars-266410/nginx
-  newTag: v0.2.94
-- name: eu.gcr.io/mymycars-266410/prerender
-  newTag: v0.2.94
+- name: abereziuk/task-01
+  newTag: 1.1.2
