@@ -6,5 +6,3 @@ resources:
 - ./manifests_prod/ingress.yml
 
 images:
-- name: abereziuk/task-01
-  newTag: 1.1.2
