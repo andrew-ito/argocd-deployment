@@ -6,4 +6,4 @@ resources:
 - ./ingress.yml
 images:
 - name: abereziuk/task-01
-  newTag: 1.3.4
+  newTag: 1.3.5
