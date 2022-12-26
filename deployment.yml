@@ -12,7 +12,14 @@ spec:
         app: kd
     spec:
       containers:
-        - name: golang-app
-          image: abereziuk/task-01:1.1.2
-          ports:
-            - containerPort: 8080
+      - name: golang-app
+        image: abereziuk/task-01:1.2.3
+        resources:
+          limits:
+            memory: 1024Mi
+            cpu: "1.5"
+          requests:
+            memory: 512Mi
+            cpu: "1"
+        ports:
+        - containerPort: 8080
